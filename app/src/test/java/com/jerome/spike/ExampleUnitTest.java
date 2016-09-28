@@ -39,4 +39,29 @@ public class ExampleUnitTest {
         Palindrome myPalindrome = new Palindrome();
         assertEquals("lavale", myPalindrome.reverse("elaval"));
     }
+    @Test
+    public void checkReverse() throws Exception {
+        Palindrome myPalindrome = new Palindrome();
+        assertEquals("lavale", myPalindrome.reverse("elaval"));
+    }
+    @Test
+    public void checkBracketsKOMissingClosingBracket() throws Exception {
+        Brackets myBrackets = new Brackets();
+        assertEquals(false, myBrackets.check("(()()((()))"));
+    }
+    @Test
+    public void checkBracketsKOClosingBracketBeforeOpeningOne() throws Exception {
+        Brackets myBrackets = new Brackets();
+        assertEquals(false, myBrackets.check(")("));
+    }
+    @Test
+    public void checkBracketsOKMultipleBrackets() throws Exception {
+        Brackets myBrackets = new Brackets();
+        assertEquals(true, myBrackets.check("((()())())"));
+    }
+    @Test
+    public void checkBracketsOKMultipleBracketsWithText() throws Exception {
+        Brackets myBrackets = new Brackets();
+        assertEquals(true, myBrackets.check("((toto)())"));
+    }
 }
