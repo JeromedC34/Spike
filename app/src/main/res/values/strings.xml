@@ -5,7 +5,6 @@
     <string name="action_fibonacci">Fibonacci</string>
     <string name="action_scramble">Scramble</string>
     <string name="palindrome_input">Tapez ici votre chaîne</string>
-    <string name="palindrome_action">Tester % Palindrome</string>
     <string name="palindrome_result">Résultat</string>
     <string name="brackets_input">Tapez ici votre chaîne</string>
     <string name="brackets_action">Tester % Brackets</string>
