@@ -59,4 +59,24 @@ public class ExampleUnitTest {
         Brackets myBrackets = new Brackets();
         assertEquals(true, myBrackets.check("((toto)())"));
     }
+    @Test
+    public void checkFibonacciIndex1() throws Exception {
+        Fibonacci myFibonacci = new Fibonacci();
+        assertEquals("1", myFibonacci.get(11));
+    }
+    @Test
+    public void checkFibonacciIndex2() throws Exception {
+        Fibonacci myFibonacci = new Fibonacci();
+        assertEquals("1 1", myFibonacci.get(2));
+    }
+    @Test
+    public void checkFibonacciIndex3() throws Exception {
+        Fibonacci myFibonacci = new Fibonacci();
+        assertEquals("1 1 2", myFibonacci.get(3));
+    }
+    @Test
+    public void checkFibonacciIndex10() throws Exception {
+        Fibonacci myFibonacci = new Fibonacci();
+        assertEquals("1 1 2 3 5 8 13 21 34 55", myFibonacci.get(10));
+    }
 }
