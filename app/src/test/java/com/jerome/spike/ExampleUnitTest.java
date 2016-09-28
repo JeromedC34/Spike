@@ -2,6 +2,8 @@ package com.jerome.spike;
 
 import org.junit.Test;
 
+import java.util.Arrays;
+
 import static org.junit.Assert.*;
 
 /**
@@ -78,5 +80,11 @@ public class ExampleUnitTest {
     public void checkFibonacciIndex10() throws Exception {
         Fibonacci myFibonacci = new Fibonacci();
         assertEquals("1 1 2 3 5 8 13 21 34 55", myFibonacci.get(10));
+    }
+    @Test
+    public void checkScrambleWithSingleShortWord() throws Exception {
+        Scramble myScramble = new Scramble();
+        String strToTest = myScramble.scrambleTextWords("one");
+        assertTrue(Arrays.asList("one", "oen", "noe", "neo", "eon", "eno").contains(strToTest));
     }
 }
