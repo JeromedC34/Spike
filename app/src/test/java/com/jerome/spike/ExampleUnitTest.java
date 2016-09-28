@@ -14,4 +14,29 @@ public class ExampleUnitTest {
     public void addition_isCorrect() throws Exception {
         assertEquals(4, 2 + 2);
     }
+    @Test
+    public void checkPalindromeOK() throws Exception {
+        Palindrome myPalindrome = new Palindrome();
+        assertEquals(true, myPalindrome.isPalindrome("laval"));
+    }
+    @Test
+    public void checkPalindromeOKWithDifferentCase() throws Exception {
+        Palindrome myPalindrome = new Palindrome();
+        assertEquals(true, myPalindrome.isPalindrome("Laval"));
+    }
+    @Test
+    public void checkPalindromeOKWithEmptyString() throws Exception {
+        Palindrome myPalindrome = new Palindrome();
+        assertEquals(true, myPalindrome.isPalindrome(""));
+    }
+    @Test
+    public void checkPalindromeKO() throws Exception {
+        Palindrome myPalindrome = new Palindrome();
+        assertEquals(false, myPalindrome.isPalindrome("lavale"));
+    }
+    @Test
+    public void checkReverse() throws Exception {
+        Palindrome myPalindrome = new Palindrome();
+        assertEquals("lavale", myPalindrome.reverse("elaval"));
+    }
 }
