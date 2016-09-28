@@ -40,11 +40,6 @@ public class ExampleUnitTest {
         assertEquals("lavale", myPalindrome.reverse("elaval"));
     }
     @Test
-    public void checkReverse() throws Exception {
-        Palindrome myPalindrome = new Palindrome();
-        assertEquals("lavale", myPalindrome.reverse("elaval"));
-    }
-    @Test
     public void checkBracketsKOMissingClosingBracket() throws Exception {
         Brackets myBrackets = new Brackets();
         assertEquals(false, myBrackets.check("(()()((()))"));
