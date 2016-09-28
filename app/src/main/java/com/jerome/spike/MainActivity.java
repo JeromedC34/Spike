@@ -30,5 +30,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        Button button_fibonacci = (Button) findViewById(R.id.button_main_fibonacci);
+        button_fibonacci.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, FibonacciActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
