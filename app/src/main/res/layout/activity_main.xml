@@ -16,25 +16,25 @@
         tools:context="com.jerome.spike.MainActivity">
 
         <Button
-            android:id="@+id/button_palindrome"
+            android:id="@+id/button_main_palindrome"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/action_palindrome" />
 
         <Button
-            android:id="@+id/button_brackets"
+            android:id="@+id/button_main_brackets"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/action_brackets" />
 
         <Button
-            android:id="@+id/button_fibonacci"
+            android:id="@+id/button_main_fibonacci"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/action_fibonacci" />
 
         <Button
-            android:id="@+id/button_scramble"
+            android:id="@+id/button_main_scramble"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/action_scramble" />
