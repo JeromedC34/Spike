@@ -23,7 +23,9 @@ public class ScrambleActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Scramble myScramble = new Scramble();
                 String inputText = editText.getText().toString();
-                textView.setText("Get Scramble: " + myScramble.scrambleTextWords(inputText) + "\n");
+                textView.setText(
+                        ScrambleActivity.this.getResources().getString(R.string.scramble_start_result) +
+                                " " + myScramble.scrambleTextWords(inputText) + "\n");
             }
         });
     }

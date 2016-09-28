@@ -29,8 +29,12 @@ public class PalindromeActivity extends AppCompatActivity {
         final TextView textView = (TextView) findViewById(R.id.text_palindrome);
         Palindrome myPalindrome = new Palindrome();
         textView.setText("");
-        textView.append("Is palindrome (" + string + ")? " + String.valueOf(myPalindrome.isPalindrome(string)) + "\n");
-        textView.append("Reverse (" + string + ") : " + myPalindrome.reverse(string) + "\n");
+        textView.append(
+                PalindromeActivity.this.getResources().getString(R.string.palindrome_start1_result).replace("%s", string) +
+                        " " + String.valueOf(myPalindrome.isPalindrome(string)) + "\n");
+        textView.append(
+                PalindromeActivity.this.getResources().getString(R.string.palindrome_start2_result).replace("%s", string) +
+                        " " + myPalindrome.reverse(string) + "\n");
         if (myPalindrome.isPalindrome(string)) {
             textView.setBackgroundColor(Color.GREEN);
         } else {

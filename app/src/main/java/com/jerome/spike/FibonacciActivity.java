@@ -23,7 +23,9 @@ public class FibonacciActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Fibonacci myFibonacci = new Fibonacci();
                 String inputText = editText.getText().toString();
-                textView.setText("Get Fibonacci: " + myFibonacci.get(Integer.valueOf(inputText)) + "\n");
+                textView.setText(
+                        FibonacciActivity.this.getResources().getString(R.string.fibonacci_start_result) +
+                        " " + myFibonacci.get(Integer.valueOf(inputText)) + "\n");
             }
         });
     }
