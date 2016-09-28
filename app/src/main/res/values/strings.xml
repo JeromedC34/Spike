@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">Spike</string>
+    <string name="app_name">Spike (Jérôme)</string>
+    <string name="action_palindrome">Palindrome</string>
+    <string name="action_brackets">Brackets</string>
+    <string name="action_fibonacci">Fibonacci</string>
+    <string name="action_scramble">Scramble</string>
 </resources>
