@@ -19,7 +19,7 @@ public class Scramble {
                     // append the scrambled word to the result
                     result.append(scrambleString(aWord.toString())).append(" ");
                     // the current word is emptied
-                    aWord.delete(0, aWord.length() - 1);
+                    aWord.delete(0, aWord.length());
                 } else {
                     // the space is added to the result (no current word)
                     result.append(' ');
