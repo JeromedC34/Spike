@@ -13,4 +13,7 @@
     <string name="fibonacci_input">Tapez ici votre indice</string>
     <string name="fibonacci_action">Tester % Fibonacci</string>
     <string name="fibonacci_result">Résultat</string>
+    <string name="scramble_input">Tapez ici votre chaîne</string>
+    <string name="scramble_action">Tester % Scramble</string>
+    <string name="scramble_result">Résultat</string>
 </resources>

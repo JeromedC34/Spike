@@ -6,4 +6,5 @@
     <color name="color_palindrome">#FFa0a0</color>
     <color name="color_brackets">#a0ffa0</color>
     <color name="color_fibonacci">#a0a0ff</color>
+    <color name="color_scramble">#ffffa0</color>
 </resources>
