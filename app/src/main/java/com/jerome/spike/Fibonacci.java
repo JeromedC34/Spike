@@ -5,7 +5,7 @@ package com.jerome.spike;
  */
 public class Fibonacci {
     public String get(int nbMax) {
-        return getFibonacciSeriesIte(nbMax);
+        return getFibonacciSeriesIte(nbMax).trim();
     }
 
     public String getFibonacciSeriesIte(int nbMax) {

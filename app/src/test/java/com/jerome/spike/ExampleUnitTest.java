@@ -62,7 +62,7 @@ public class ExampleUnitTest {
     @Test
     public void checkFibonacciIndex1() throws Exception {
         Fibonacci myFibonacci = new Fibonacci();
-        assertEquals("1", myFibonacci.get(11));
+        assertEquals("1", myFibonacci.get(1));
     }
     @Test
     public void checkFibonacciIndex2() throws Exception {
