@@ -7,4 +7,7 @@
     <string name="palindrome_input">Tapez ici votre chaîne</string>
     <string name="palindrome_action">Tester % Palindrome</string>
     <string name="palindrome_result">Résultat</string>
+    <string name="brackets_input">Tapez ici votre chaîne</string>
+    <string name="brackets_action">Tester % Brackets</string>
+    <string name="brackets_result">Résultat</string>
 </resources>

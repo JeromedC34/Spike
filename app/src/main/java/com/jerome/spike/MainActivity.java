@@ -21,5 +21,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        Button button_brackets = (Button) findViewById(R.id.button_main_brackets);
+        button_brackets.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, BracketsActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
