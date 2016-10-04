@@ -33,4 +33,10 @@
         android:paddingTop="@dimen/my_default_padding"
         android:textSize="18sp"
         android:text="@string/palindrome_result" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/my_fab"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        />
 </LinearLayout>

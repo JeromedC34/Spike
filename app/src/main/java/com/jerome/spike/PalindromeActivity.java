@@ -1,6 +1,8 @@
 package com.jerome.spike;
 
+import android.content.res.ColorStateList;
 import android.graphics.Color;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
@@ -35,7 +37,9 @@ public class PalindromeActivity extends AppCompatActivity {
         });
     }
     protected void doAction(String string){
-        final TextView textView = (TextView) findViewById(R.id.text_palindrome);
+        final TextView
+                textView = (TextView) findViewById(R.id.text_palindrome);
+        final FloatingActionButton myFab = (FloatingActionButton) findViewById(R.id.my_fab);
         Palindrome myPalindrome = new Palindrome();
         textView.setText("");
         textView.append(
@@ -46,8 +50,10 @@ public class PalindromeActivity extends AppCompatActivity {
                         " " + myPalindrome.reverse(string) + "\n");
         if (myPalindrome.isPalindrome(string)) {
             textView.setBackgroundColor(Color.GREEN);
+            myFab.setBackgroundTintList(ColorStateList.valueOf(Color.GREEN));
         } else {
             textView.setBackgroundColor(Color.RED);
+            myFab.setBackgroundTintList(ColorStateList.valueOf(Color.RED));
         }
     }
 }
