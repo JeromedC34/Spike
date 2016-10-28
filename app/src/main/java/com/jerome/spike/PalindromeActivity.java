@@ -49,10 +49,10 @@ public class PalindromeActivity extends AppCompatActivity {
                 PalindromeActivity.this.getResources().getString(R.string.palindrome_start2_result).replace("%s", string) +
                         " " + myPalindrome.reverse(string) + "\n");
         if (myPalindrome.isPalindrome(string)) {
-            textView.setBackgroundColor(Color.GREEN);
+            //textView.setBackgroundColor(Color.GREEN);
             myFab.setBackgroundTintList(ColorStateList.valueOf(Color.GREEN));
         } else {
-            textView.setBackgroundColor(Color.RED);
+            //textView.setBackgroundColor(Color.RED);
             myFab.setBackgroundTintList(ColorStateList.valueOf(Color.RED));
         }
     }
